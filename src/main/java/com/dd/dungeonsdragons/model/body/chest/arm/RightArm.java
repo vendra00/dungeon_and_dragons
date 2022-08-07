@@ -1,4 +1,4 @@
-package com.dd.dungeonsdragons.model.body.head;
+package com.dd.dungeonsdragons.model.body.chest.arm;
 
 import com.dd.dungeonsdragons.model.AbstractEntity;
 import com.dd.dungeonsdragons.model.HealthStatus;
@@ -10,16 +10,15 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity(name = "RightEye")
-@Table(name = "RIGHT_EYE_TBL")
+@Entity(name = "RightArm")
+@Table(name = "RIGHT_ARM_TBL")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class RightEye extends AbstractEntity {
-    @Column(name = "eye_color")
-    private String eyeColor;
+public class RightArm extends AbstractEntity {
+
     @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST })
-    @JoinTable(name = "RIGHT_EYE_STATUS", joinColumns = { @JoinColumn(name = "right_eye_id") }, inverseJoinColumns = {@JoinColumn(name = "health_status_id") })
+    @JoinTable(name = "RIGHT_ARM_STATUS", joinColumns = { @JoinColumn(name = "right_arm_id") }, inverseJoinColumns = {@JoinColumn(name = "health_status_id") })
     private List<HealthStatus> healthStatuses;
 }

@@ -1,4 +1,4 @@
-package com.dd.dungeonsdragons.model.body.head;
+package com.dd.dungeonsdragons.model.body.head.eye;
 
 import com.dd.dungeonsdragons.model.AbstractEntity;
 import com.dd.dungeonsdragons.model.HealthStatus;
