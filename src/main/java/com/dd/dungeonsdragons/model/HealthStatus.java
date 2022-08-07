@@ -1,7 +1,6 @@
 package com.dd.dungeonsdragons.model;
 
-import com.dd.dungeonsdragons.model.body.head.Mouth;
-import com.dd.dungeonsdragons.model.body.head.Nose;
+import com.dd.dungeonsdragons.model.body.head.*;
 import com.dd.dungeonsdragons.model.enums.BodyStatus;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -26,9 +25,18 @@ public class HealthStatus extends AbstractEntity {
 
     @JsonIgnore
     @ManyToMany(mappedBy = "healthStatuses")
-    private List<Mouth> mouth;
-
+    private List<Mouth> mouths;
     @JsonIgnore
     @ManyToMany(mappedBy = "healthStatuses")
-    private List<Nose> nose;
+    private List<Nose> noses;
+    @JsonIgnore
+    @ManyToMany(mappedBy = "healthStatuses")
+    private List<RightEye> rightEyes;
+    @JsonIgnore
+    @ManyToMany(mappedBy = "healthStatuses")
+    private List<LeftEar> leftEars;
+    @JsonIgnore
+    @ManyToMany(mappedBy = "healthStatuses")
+    private List<RightEar> rightEars;
+
 }

@@ -2,7 +2,6 @@ package com.dd.dungeonsdragons.model.body.head;
 
 import com.dd.dungeonsdragons.model.AbstractEntity;
 import com.dd.dungeonsdragons.model.HealthStatus;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

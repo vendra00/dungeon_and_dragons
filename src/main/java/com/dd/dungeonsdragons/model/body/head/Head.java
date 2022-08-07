@@ -26,6 +26,12 @@ public class Head extends AbstractEntity {
     @JoinColumn(name = "left_eye_id", referencedColumnName = "id")
     private LeftEye leftEye;
     @OneToOne(cascade = CascadeType.ALL , orphanRemoval = true)
+    @JoinColumn(name = "right_ear_id", referencedColumnName = "id")
+    private RightEar rightEar;
+    @OneToOne(cascade = CascadeType.ALL , orphanRemoval = true)
+    @JoinColumn(name = "left_ear_id", referencedColumnName = "id")
+    private LeftEar leftEar;
+    @OneToOne(cascade = CascadeType.ALL , orphanRemoval = true)
     @JoinColumn(name = "nose_id", referencedColumnName = "id")
     private Nose nose;
     @OneToOne(cascade = CascadeType.ALL , orphanRemoval = true)
