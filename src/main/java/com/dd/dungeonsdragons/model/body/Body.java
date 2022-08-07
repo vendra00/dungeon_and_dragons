@@ -1,7 +1,7 @@
 package com.dd.dungeonsdragons.model.body;
 
 import com.dd.dungeonsdragons.model.AbstractEntity;
-import com.dd.dungeonsdragons.model.body.chest.Chest;
+import com.dd.dungeonsdragons.model.body.upperBody.Chest;
 import com.dd.dungeonsdragons.model.body.head.Head;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,6 +1,6 @@
 package com.dd.dungeonsdragons.model;
 
-import com.dd.dungeonsdragons.model.body.chest.Chest;
+import com.dd.dungeonsdragons.model.body.upperBody.Chest;
 import com.dd.dungeonsdragons.model.body.head.*;
 import com.dd.dungeonsdragons.model.body.head.ear.LeftEar;
 import com.dd.dungeonsdragons.model.body.head.ear.RightEar;

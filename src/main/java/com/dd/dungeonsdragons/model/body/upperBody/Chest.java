@@ -1,9 +1,9 @@
-package com.dd.dungeonsdragons.model.body.chest;
+package com.dd.dungeonsdragons.model.body.upperBody;
 
 import com.dd.dungeonsdragons.model.AbstractEntity;
 import com.dd.dungeonsdragons.model.HealthStatus;
-import com.dd.dungeonsdragons.model.body.chest.arm.LeftArm;
-import com.dd.dungeonsdragons.model.body.chest.arm.RightArm;
+import com.dd.dungeonsdragons.model.body.upperBody.arm.LeftArm;
+import com.dd.dungeonsdragons.model.body.upperBody.arm.RightArm;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

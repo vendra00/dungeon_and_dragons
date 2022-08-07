@@ -18,5 +18,8 @@ public enum BodyStatus {
     Stunned,
     Unconscious,
     Prone,
-    Silenced
+    Silenced,
+    Frostbitten,
+    Chilled,
+    Overheated
 }

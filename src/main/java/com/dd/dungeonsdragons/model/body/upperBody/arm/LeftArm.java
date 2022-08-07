@@ -1,4 +1,4 @@
-package com.dd.dungeonsdragons.model.body.chest.arm;
+package com.dd.dungeonsdragons.model.body.upperBody.arm;
 
 import com.dd.dungeonsdragons.model.AbstractEntity;
 import com.dd.dungeonsdragons.model.HealthStatus;
