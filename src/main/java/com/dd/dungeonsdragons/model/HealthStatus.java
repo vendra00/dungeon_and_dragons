@@ -48,5 +48,8 @@ public class HealthStatus extends AbstractEntity {
     @JsonIgnore
     @ManyToMany(mappedBy = "healthStatuses")
     private List<Chest> chests;
+    @JsonIgnore
+    @ManyToMany(mappedBy = "healthStatuses")
+    private List<Neck> necks;
 
 }

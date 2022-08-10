@@ -1,6 +1,7 @@
 package com.dd.dungeonsdragons.model.body;
 
 import com.dd.dungeonsdragons.model.AbstractEntity;
+import com.dd.dungeonsdragons.model.body.head.Neck;
 import com.dd.dungeonsdragons.model.body.upperBody.Chest;
 import com.dd.dungeonsdragons.model.body.head.Head;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,10 @@ public class Body extends AbstractEntity {
     @OneToOne(cascade = CascadeType.ALL , orphanRemoval = true)
     @JoinColumn(name = "head_id", referencedColumnName = "id")
     private Head head;
+
+    @OneToOne(cascade = CascadeType.ALL , orphanRemoval = true)
+    @JoinColumn(name = "neck_id", referencedColumnName = "id")
+    private Neck neck;
 
     @OneToOne(cascade = CascadeType.ALL , orphanRemoval = true)
     @JoinColumn(name = "chest_id", referencedColumnName = "id")
